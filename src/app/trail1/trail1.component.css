@@ -1,0 +1,20 @@
+h1{
+    color:chocolate;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+td{
+padding: 7px;
+}
+div{
+    margin-top: 100px;
+    margin-right: 130px;
+    margin-left: 130px;
+    border: 2px solid rgb(16, 202, 244);
+    text-align:center;
+    text-size-adjust:50px ;
+    height: 189px;
+    background: rgb(161, 234, 242);
+    padding: 29px;
+ }

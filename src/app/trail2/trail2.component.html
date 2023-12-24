@@ -1,0 +1,42 @@
+<html><body>
+    
+    <div>
+        <h3 style="color: chocolate;"> Simple Calculator</h3>
+    <table>
+   
+    <tr>
+        <td colspan="4">
+            <input type="text" [(ngModel)]="x"(ngModelChange)="eval()">
+        </td>
+        
+        
+    </tr>
+    <tr >
+        <td><input type="button" value="1" (click)="number(1)"></td>
+        <td><input type="button" value="2"(click)="number(2)"></td>
+        <td><input type="button" value="3"(click)="number(3)"></td>
+        <td><input type="button" value="c"(click)="clear()"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4"(click)="number(4)"></td>
+        <td><input type="button" value="5"(click)="number(5)"></td>
+        <td><input type="button" value="6"(click)="number(6)"></td>
+        <td><input type="button" value="/"(click)="operator('/')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7"(click)="number(7)"></td>
+        <td><input type="button" value="8"(click)="number(8)"></td>
+        <td><input type="button" value="9"(click)="number(9)"></td>
+        <td><input type="button" value="*"(click)="operator('*')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="0"(click)="number(0)"></td>
+        <td><input type="button" value="+"(click)="operator('+')"></td>
+        <td><input type="button" value="-"(click)="operator('-')"></td>
+        <td><input type="button" value="=" (click)="calculate()"></td>
+    </tr>
+</table>
+</div>
+
+</body>
+</html>

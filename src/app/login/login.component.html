@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <form  (ngSubmit)="submit_user()">
+            <div   class="container">
+            <label for="input1"><b>Username:</b></label>
+            <input type="text"  id="input1"  [(ngModel)]="u" placeholder="Enter your Username" name="input1" required>
+
+            <label for="input2"><b>Password</b></label>
+            <input type="password"  id="input2" [(ngModel)]="p" placeholder="Enter your Password"  name="input2" required>
+
+            <button  type="submit">Login</button>
+            <h4 style="text-align: center;">{{k}}</h4>
+           
+            <h4>{{res}}</h4>
+        </div>
+             
+    </form>
+
+               
+                <button   (click)="logout_user()" type="submit">Logout</button>    
+                
+
+         
+    </body>
+</html>
+
+
+ 

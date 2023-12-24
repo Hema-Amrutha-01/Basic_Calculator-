@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              align-items: center;
+              width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: center;
+              padding: 8px;
+            }
+            tr:nth-child() {
+              background-color: #dddddd;
+            }
+            </style>
+    </head>
+    <body>
+        <h1> Forgot steps or Wrong Calculations? </h1>
+        <div>
+        <input type="text" placeholder="enter no of operations to be retrieved" style="width: 500px; height: 50px; font-size: 25px;" (input)="save_d($event)" >
+       &nbsp; <button (click)='toggleShowTable()' class="btn btn-primary">Get</button>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expression</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of l ">
+                        <td>{{user[0]}} </td>
+                        <td>{{user[1]}}</td>
+                    </tr>
+                </tbody>
+            </table>
+ </div>
+ </div>
+ </body>
+</html>
+
+ 
+
+
